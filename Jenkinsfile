@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'git@github.com:rishabh911996/simplilearn-devops-cert.git', branch: 'master', credentialsId: 'git-hub-1'])
+        git([url: 'https://github.com/rishabh911996/simplilearn-devops-cert-2.git', branch: 'master', credentialsId: 'git-hub-1'])
 
       }
     }
