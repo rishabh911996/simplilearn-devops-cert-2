@@ -34,7 +34,7 @@ pipeline {
       steps{
         sh "docker stop simplilearn-devops-cert"
         sh "docker rm simplilearn-devops-cert"
-        sh "docker run -d -p 80:5050 --name simplilearn-devops-cert $imagename:$BUILD_NUMBER"
+        sh "docker run -d -p 80:5050 --name simplilearn-devops-cert-5050 $imagename:$BUILD_NUMBER"
         sh "docker rmi $imagename:$BUILD_NUMBER"
 
       }
